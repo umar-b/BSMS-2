@@ -1,6 +1,17 @@
 <template>
-  <main font-sans p="x-4 y-10" text="center gray-700 dark:gray-200">
-    <RouterView />
-    <TheFooter />
-  </main>
+  <div class="app-container">
+    <Dashboard />
+  </div>
 </template>
+
+<script setup>
+import Dashboard from './components/Dashboard.vue'
+</script>
+
+<style>
+.app-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+</style>
